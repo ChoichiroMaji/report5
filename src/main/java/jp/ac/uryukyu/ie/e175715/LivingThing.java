@@ -63,7 +63,7 @@ public class LivingThing {
 
     public void wounded(int damage) {
         hitPoint -= damage;
-        if( hitPoint < 0 ) {
+        if( hitPoint < 1 ) {
             dead = true;
             System.out.printf("%sは倒れた。\n", name);
         }
